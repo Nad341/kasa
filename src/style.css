@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    width: min(1240px, 100%);
+    height: 100px;
+    margin: 40px auto;
+    padding: 0 10px;
+
+}
+
+
+header .logo{
+    width: 300px;
+    height: 100px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+
+header .menu{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    
+    
+}
+
+header .menu a{
+    color: #eb7676;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 26px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header .menu a:hover, header .menu a.active{
+    text-decoration: underline;
+}
+
+
+
+.banner{
+    width: 1240px;
+    border-radius: 25px;
+    background: #000;
+    margin: 0 auto;
+    min-height: 200px;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 1;
+}
+
+.banner-text{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-weight: 300;
+}
+
+
+.gallery_container{
+    width: min(1240px,90%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+    box-sizing: border-box;
+    min-height: 200px;
+    margin-top: 50px;
+}
+
+
+.gallery_item{
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(252, 96, 96, 1) 0%, rgba(228, 121, 121, 0.5) 100%);
+    border-radius: 10px;
+    margin: 30px 25px;
+    position: relative;
+}
+
+.gallery_item span{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    header .menu a{
+        margin: 0 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    header .logo{padding-top: 25px;}
+    header .logo img{
+        width: 145px;
+    }
+
+
+}
+    
+
+
+@media screen and (max-width: 1240px){
+    .banner{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner-text{
+        font-size: 20px;
+    }
+
+    .gallery_item{
+        width: 100%;
+        margin: 30px 0;
+    }
+
+}
