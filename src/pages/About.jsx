@@ -3,7 +3,7 @@ import Toggle from '../components/Toggle';
 function About(){
     return(
         <div>
-           <Banner urlImage='banner-about.jpg' height='218px'/>
+           <Banner urlImage='/images/banner-about.jpg' height='218px'/>
            <Toggle title="Fiabilité">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</Toggle>
            <Toggle title="Respect">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Toggle>
            <Toggle title="Service">Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</Toggle>

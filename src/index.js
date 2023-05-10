@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './style.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
+
+// Import des pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
+import Details from './pages/Details';
+
+// Import des éléments de navigation
+import Header from './components/Header';
 import Footer from './components/Footer';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     
@@ -18,6 +24,7 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Error />} />
+            <Route path="/details/:id" element={<Details />} />
 
             </Routes>
         <Footer />
