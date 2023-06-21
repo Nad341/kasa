@@ -5,7 +5,7 @@ import Gallery from '../components/Gallery';
 function Home(){
     return(
         <div>
-            <Banner urlImage='/images/banner1.jpg' height='218px' text='Chez vous, partout et ailleurs'  />
+            <Banner urlImage='/images/banner1.jpg' text='Chez vous, partout et ailleurs'  />
             <Gallery />
         </div>
     )

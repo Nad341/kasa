@@ -3,7 +3,6 @@ import Banner from './Banner';
 
 function Slider(props) {
     const images = props.images;
-    console.log(images);
     const [current, setCurrent] = useState(0);
 
     const handleNext = () => {

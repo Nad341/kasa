@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
 import Details from './pages/Details';
+import Test from './pages/Test';
 
 // Import des éléments de navigation
 import Header from './components/Header';
@@ -23,8 +24,9 @@ root.render(
             <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<Error />} />
             <Route path="/details/:id" element={<Details />} />
+            <Route path='/test' element={<Test  texte='lmdsjflkdsjlkfs'/>} />
+            <Route path="*" element={<Error />} />
 
             </Routes>
         <Footer />

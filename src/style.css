@@ -120,6 +120,8 @@ header .menu a:hover, header .menu a.active{
     padding: 10px;
     font-size: 18px;
     color: #fff;
+    border-radius: 0 0 10px 10px;
+    /* Pas sur le Figma */
     background: rgba(0,0,0,0.3);
 }
 
@@ -278,6 +280,7 @@ margin: 20px 0;
     left: 20px;
     z-index: 9;
     font-size: 50px;
+    cursor: pointer;
 }
 
 
@@ -288,6 +291,7 @@ margin: 20px 0;
     right: 20px;
     z-index: 9;
     font-size: 50px;
+    cursor: pointer;
 }
 
 
@@ -360,3 +364,24 @@ margin: 20px 0;
     
 
 }
+
+
+
+
+.paraph{
+    width: 500px;
+    margin: 10px auto;
+    border-top:1px solid #eb7676;
+    border-bottom:1px solid #eb7676;
+}
+
+.paraph h1{
+    text-transform: uppercase;
+}
+
+.btn{
+    height: 45px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
